@@ -1,0 +1,133 @@
+html,body{
+    height: 100%;
+}
+
+html{
+    font-size: 26.67vw;
+}
+
+body{
+    width: 100vw;
+    font-size: 16px;
+}
+
+.register{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.register_title{
+    height:0.44rem;
+    padding: 0 0.15rem;
+}
+.register_title.i{
+    font-size: 0.08rem;
+}
+
+.register_code{
+    height: 3.35rem;
+}
+.register_code>img{
+    width: 1.6rem;
+    height: 0.55rem;
+    margin: 0.285rem 1.075rem 0.29rem ;
+}
+.register_code .code_input{
+    width: 3.1rem;
+    height: 1.2rem;
+    margin:0 auto ;
+}
+
+.code_input .code{
+    width: 3.1rem;
+    height: 0.55rem;
+    display: flex;
+    margin: 0.1rem 0 0;
+    border-bottom: 1px solid gray;
+}
+.code_input .code span{
+    text-align: center;
+    line-height: 0.425rem;
+    font-size: 0.15rem;
+    color: #ff6743;
+}
+
+.code_input .code input{
+    width: 3.1rem;
+    height: 0.18rem;
+    border: none;
+    margin: 0.13rem 0;
+    font-size: 0.16rem;
+    color: #232323;
+    outline: 0;
+}
+.code_input p{
+    width: 3.1rem;
+    height: 0.15rem;
+    font-size: 0.12rem;
+    color: #999999;
+}
+
+.btn_code{
+    width: 3.1rem;
+    height: 1.35rem;
+    margin: 0 auto;
+}
+.getCode{
+    width: 3.1rem;
+    line-height: 0.498rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 0.18rem;
+    margin: 0.7rem 0 0.195rem;
+    background: linear-gradient(50deg, #ff9a34, #ff4d4a);
+    color: #FEFEFE;
+    opacity: 0.4;
+}
+.register_link{
+    width: 3.1rem;
+    height: 0.2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.register_link a{
+    color: #666666;
+    font-size: 0.15rem;
+    text-decoration: none;
+}
+
+.register_foot{
+    position: relative;
+    bottom: -1.5rem;
+    width: 2.35rem;
+    height: 0.9rem;
+    left: 20%;
+    right: 0.75rem;
+    border-top: 1px solid #232323;
+}
+
+.register_foot .else{
+    position: absolute;
+    left: 34%;
+    top: -0.1rem;
+    color: #999999;
+    font-size: 0.12rem;
+    text-align: center;
+    background-color: #fefefe;
+}
+.register_foot .register_list{
+    width: 2.35rem;
+    height: 0.35rem;
+    margin: 0.35rem 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.register_foot .register_list img{
+    width: 0.35rem;
+    height: 0.35rem;
+}
+

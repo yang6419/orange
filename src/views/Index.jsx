@@ -20,7 +20,7 @@ export default class Index extends React.Component {
                 <Route path={'/theatre'} component={Myjuooo}></Route>
                 <Route path={'/eticket'} component={Theatre}></Route>
                 <Route path={'/myjuooo'} component={Eticket}></Route>
-                <footer>
+                <footer className={"footer"}>
                     <NavLink exact to={'/'}>首页</NavLink>|
                     <NavLink to={'/theatre'}>剧院</NavLink>|
                     <NavLink to={'/eticket'}>票夹</NavLink>|
