@@ -1,0 +1,4 @@
+export default {
+    CHANGE_CATEGORY:"CHANGE_CATEGORY",
+    CHANGE_DETAIL:'CHANGE_DETAIL'
+}

@@ -1,0 +1,195 @@
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+hr{width: 100%;color: #B5B5B5;}
+
+.detail{
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+	flex-direction: column;
+}
+header{
+    height: 8.5334rem;
+    width: 100%;
+    background: url(/static/img/theater_detail_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    background-color: aquamarine;
+    display: flex;
+	flex-direction: column;
+}
+.header-one{
+    height: 2.34666rem;
+    width: 100%;
+    /* position: relative; */
+    background-color: antiquewhite;
+}
+.header-one i{
+    padding: 0.58666rem 1.06666rem 0.58666rem 0.53334rem;
+    font-size: 0.96rem;
+    /* position: absolute; */
+    color: white;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+}
+.header-two{
+    height: 7.41334rem;
+    width: 100%;
+    background-color: blue;
+}
+.header-two-center{
+    /* position: absolute; */
+    bottom: 0.8rem;
+    left: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+.header-two-center-top{
+    display: flex;
+    box-sizing: border-box;
+    /* -webkit-box-align: center; */
+    
+}
+.header-two-center-top-img{
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    display: inline-block;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.header-two-center-top-text{
+    margin-left: 0.58666rem;
+    flex: 1;
+    -webkit-box-flex: 1;
+    text-align: left;
+}
+.header-two-center-top-text p{
+    color: white;
+    font-size: 0.96rem;
+    font-weight: bold;
+}
+.header-two-center-top-text span{
+    color: white;
+    font-size: 0.69rem;
+}
+.header-two-center-position{
+    margin-top:1.04rem;
+    color: white;
+    font-size: 0.64rem;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-align: center;
+    /* text-overflow: ellipsis; */
+    margin-right: 3.04rem;
+}
+.header-three{
+    color: #232323;
+    font-size:0.96rem;
+    font-weight: bold;
+    margin-top:1.12rem;
+    margin-left: 0.69rem;
+    text-align: left;
+    width: 100%;
+}
+section{
+    margin-top: 0.48rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+.section-body{
+    display: flex;
+    height: 9.3rem;
+    position: relative;
+}
+.section-body-one{
+    width:100%;
+    display:flex;
+}
+.section-body-one-img{
+    width:5.6rem;
+    height: 7.68rem;
+    background-color: pink;
+}
+.section-body-one-text{
+    margin-left: 0.8rem;
+    width: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: orange;
+    text-align: left;
+}
+.section-body-one-text-top span{
+    display: inline-block;
+    height: 0.86rem;
+    line-height: 0.86rem;
+    font-size: 0.86rem;
+}
+.section-body-one-text-center span{
+    font-size: 0.86rem;
+    color: #232323;
+    line-height: 1.22666rem;
+    height: 2.46rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.section-body-one-text-place{
+    font-size: 0.64rem;
+    color: #666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 0.75rem;
+    line-height: 0.75rem;
+}
+.section-body-two{
+    position: absolute;
+    top: 4.66667rem;
+    left: 6.2rem;
+}
+.section-body-two span{
+    display: inline-block;
+    margin-right: 0.27rem;
+    border-radius: 0.45rem;
+    padding: 0.05rem 0.27rem;
+    color: #ff6743;
+    font-size: 0.58rem;
+    background-color: #fff1ef
+}
+.section-body-three{
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: 6.28rem;
+    top: 6.4rem;
+}
+.section-body-three span:first-child{
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #ff6743;
+    height: 0.85rem;
+    line-height: 0.85rem;
+}
+.section-body-three span:nth-child(1){
+    display: inline-block;
+    font-size: 0.29333rem;
+    height: 0.29333rem;
+    line-height: 0.29333rem;
+    color: #999999;
+    margin-top: 0.02667rem;
+    margin-left: 0.12rem;
+}
