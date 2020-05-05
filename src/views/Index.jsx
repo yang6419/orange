@@ -18,6 +18,19 @@ export default class Index extends React.Component {
         return (
             <div>
                 <Route path={'/'} exact component={Home}></Route>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                <Route path={'/theatre'} component={Myjuooo}></Route>
+                <Route path={'/eticket'} component={Theater}></Route>
+                <Route path={'/myjuooo'} component={Eticket}></Route>
+                <footer className={"footer"}>
+                    <NavLink exact to={'/'}>首页</NavLink>|
+                    <NavLink to={'/theatre'}>剧院</NavLink>|
+                    <NavLink to={'/eticket'}>票夹</NavLink>|
+                    <NavLink to={'/myjuooo'}>我的</NavLink>
+=======
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
                 <Route path={'/theatre'} component={Theatre}></Route>
                 <Route path={'/eticket'} exact component={Eticket}></Route>
                 <Route path={'/myjuooo'} exact component={Myjuooo}></Route>

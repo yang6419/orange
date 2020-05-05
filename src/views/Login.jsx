@@ -33,8 +33,13 @@ export default class Login extends React.Component {
                                   <button className="login_btn">登录</button>
                               </div>
                               <div className="login_link">
+<<<<<<< HEAD
                                   <a href=";">忘记密码</a>
                                   <a href=";">验证码登录/注册</a>
+=======
+                                  <a href="#">忘记密码</a>
+                                  <a href="#">验证码登录/注册</a>
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
                               </div>
                       </div>
                       <div className="login_foot">

@@ -32,8 +32,13 @@ export default class register extends Component {
                                 <button className="getCode">获取短信验证码</button>
                             </div>
                             <div className="register_link">
+<<<<<<< HEAD
                                 <a href=";">邮箱注册</a>
                                 <a href=";">密码登录</a>
+=======
+                                <a href="#">邮箱注册</a>
+                                <a href="#">密码登录</a>
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
                             </div>
                     </div>
                     <div className="register_foot">

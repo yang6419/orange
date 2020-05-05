@@ -18,6 +18,7 @@ export default class Show extends Component {
                     </div>
                     <div className="show_type">
                         <div className="nav">
+<<<<<<< HEAD
                             <a href=";">全部</a>
                             <a href=";">演唱会</a>
                             <a href=";">音乐会</a>
@@ -27,6 +28,17 @@ export default class Show extends Component {
                             <a href=";">戏曲综艺</a>
                             <a href=";">展览</a>
                             <a href=";">舞蹈芭蕾</a>
+=======
+                            <a href="#">全部</a>
+                            <a href="#">演唱会</a>
+                            <a href="#">音乐会</a>
+                            <a href="#">话剧歌剧</a>
+                            <a href="#">儿童亲子</a>
+                            <a href="#">音乐剧</a>
+                            <a href="#">戏曲综艺</a>
+                            <a href="#">展览</a>
+                            <a href="#">舞蹈芭蕾</a>
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
                             <div className="city_wrap">
                                 <div className="city">
                                     <span>全国  <i>i</i></span>
@@ -38,7 +50,11 @@ export default class Show extends Component {
                         <ul className="show_module">
                             <li>
                                 <div className="falls">
+<<<<<<< HEAD
                                     <img src="../assets/style/img/falls.jpg" alt=' '/>
+=======
+                                    <img src="./style/img/falls.jpg"/>
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
                                         <span>南京</span>
                                 </div>
                                 <div className="cell_info">
@@ -49,7 +65,11 @@ export default class Show extends Component {
                             </li>
                             <li>
                                 <div className="falls">
+<<<<<<< HEAD
                                     <img src="../assets/style/img/falls.jpg" alt=' '/>
+=======
+                                    <img src="./style/img/falls.jpg"/>
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
                                         <span>南京</span>
                                 </div>
                                 <div className="cell_info">
@@ -60,7 +80,11 @@ export default class Show extends Component {
                             </li>
                             <li>
                                 <div className="falls">
+<<<<<<< HEAD
                                     <img src="../assets/style/img/falls.jpg" alt=' '/>
+=======
+                                    <img src="./style/img/falls.jpg"/>
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
                                         <span>南京</span>
                                 </div>
                                 <div className="cell_info">
@@ -71,7 +95,11 @@ export default class Show extends Component {
                             </li>
                             <li>
                                 <div className="falls">
+<<<<<<< HEAD
                                     <img src="../assets/style/img/falls.jpg" alt=' '/>
+=======
+                                    <img src="./style/img/falls.jpg"/>
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
                                         <span>南京</span>
                                 </div>
                                 <div className="cell_info">
@@ -82,7 +110,11 @@ export default class Show extends Component {
                             </li>
                             <li>
                                 <div className="falls">
+<<<<<<< HEAD
                                     <img src="../assets/style/img/falls.jpg" alt=' '/>
+=======
+                                    <img src="./style/img/falls.jpg"/>
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
                                         <span>南京</span>
                                 </div>
                                 <div className="cell_info">
@@ -93,7 +125,11 @@ export default class Show extends Component {
                             </li>
                             <li>
                                 <div className="falls">
+<<<<<<< HEAD
                                     <img src="../assets/style/img/falls.jpg" alt=' '/>
+=======
+                                    <img src="./style/img/falls.jpg"/>
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
                                         <span>南京</span>
                                 </div>
                                 <div className="cell_info">
@@ -104,7 +140,11 @@ export default class Show extends Component {
                             </li>
                             <li>
                                 <div className="falls">
+<<<<<<< HEAD
                                     <img src="../assets/style/img/falls.jpg" alt=' '/>
+=======
+                                    <img src="./style/img/falls.jpg"/>
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
                                         <span>南京</span>
                                 </div>
                                 <div className="cell_info">
@@ -115,7 +155,11 @@ export default class Show extends Component {
                             </li>
                             <li>
                                 <div className="falls">
+<<<<<<< HEAD
                                     <img src="../assets/style/img/falls.jpg" alt=' '/>
+=======
+                                    <img src="./style/img/falls.jpg"/>
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
                                         <span>南京</span>
                                 </div>
                                 <div className="cell_info">

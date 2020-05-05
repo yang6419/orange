@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
 html,body{
   width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.App{
+=======
+>>>>>>> 2fee519b85cda61d5cd57e9088364e3e901942f6
 *{
   margin: 0;
   padding: 0;
@@ -12,6 +21,7 @@ li{
 }
 .App {
   text-align: center;
+>>>>>>> 81311af07913d68d423e97f55b621db14da2e8f4
 }
 
 
