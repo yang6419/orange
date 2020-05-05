@@ -8,5 +8,12 @@ module.exports = function (app) {
         pathRewrite:{
             "^/orange":""
         }
+    }));
+    app.use("/log",createProxyMiddleware({
+        target:"http://127.0.0.1:80/",
+        changeOrigin:true,
+        pathRewrite:{
+            "^/log":""
+        }
     }))
 }

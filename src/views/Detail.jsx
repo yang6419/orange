@@ -76,7 +76,7 @@ export default class Detail extends React.Component {
     }
     async componentDidMount() {
         console.log(this.props)
-        // const {data} = await axios.get("/orange/Show/Search/getShowList"+this.state)
+        // const {data} = await axios.get("/orange/show/Search/getShowList"+this.state)
         
         // console.log(data);
         // const detailList = data.data.list;

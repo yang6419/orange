@@ -1,11 +1,2 @@
 ﻿路晨
-操作时间:2020.5.20
-更新内容:
-    app.js:
-        添加了登录路由Login.jsx,主页面路由Index.jsx
-    Index.jsx:
-        添加了4个路由导航:路由文件放置在Index文件夹内
-            Home:首页
-            Theater:剧院
-            Eticket:票夹
-            Myjuooo:我的
+操作时间:2020.5.2
