@@ -9,4 +9,11 @@ module.exports = function (app) {
             "^/orange":""
         }
     }))
+    app.use("/tours",createProxyMiddleware({
+        target:"https://m.juooo.com/",
+        changeOrigin:true,
+        pathRewrite:{
+            "^/tours":""
+        }
+    }))
 }

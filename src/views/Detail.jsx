@@ -1,13 +1,16 @@
 import React from "react";
 import '../assets/Theater/Theater_detail.css';
-// import axios from "axios";
+import axios from "axios";
 import store from "../store";
+import '../assets/style/css/font_1499266_s13zw29z4c.css';
 // import {changeDealiList} from "../store/actionCreator/theater";
+import {changeTheatreid} from "../store/actionCreator/theater";
 export default class Detail extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            detailList:store.getState().theater.detailList
+            theatre:store.getState().theater.theatre,
+            venue:store.getState().theater.venue
         }
     }
 
@@ -15,75 +18,92 @@ export default class Detail extends React.Component {
         return (
             <div  className='detail'>
                 <div  className='body'>
-                    <header>
+                    <header className='detail_header' ref='this.state.theatre'>
+                        <div className='top'>
                         <div className='header-one'>
-                            <i></i>
+                            <i className='iconfont ju-icon-arrow'></i>
                         </div>
                         <div className='header-two'>
                             <div className='header-two-center'>
                             <div className='header-two-center-top'>
                                 <div className='header-two-center-top-img'>
-                                {/* <img></img> */}
+                                <img src={''+this.state.theatre.theatre_pic} alt=""/>
                                 </div>
                                 <div className='header-two-center-top-text'>
-                                    <p>南山文体中心</p>
-                                    <span>93场演出</span>
+                                    <p>{this.state.theatre.theatre_name}</p>
+        <p>{this.state.theatre.sch_num}场演出</p>
                                 </div>
                             </div>
                             <div className='header-two-center-position'>
-                                <span>深圳 &nbsp;|&nbsp;广东省深圳市南山区南山大道和南头街交汇处</span>
+        <span>{this.state.theatre.city_name}&nbsp;|&nbsp;{this.state.theatre.theatre_address}</span>
                                 <i></i>
                             </div>
                             </div>
+                        </div>
                         </div>
                         <div className='header-three'>
                             热门演出
                         </div>
                     </header> 
-                    <section>
-                        <div className='section-body'>
-                            <div className='section-body-one'>
-                                <div className='section-body-one-img'>
-                                    {/* <img></img> */}
+                    <section className='detail_section'>
+                        {
+                            this.state.venue.map(v=>(
+                            <div className='section-body' key={v.schedular_id}>
+                                <div className='section-body-one'>
+                                    <div className='section-body-one-img'>
+                                    <img src={''+v.pic} alt=""/>
+                                    </div>
+                                    <div className='section-body-one-text'>
+                                        <div className='section-body-one-text-top'>
+                                            <span>{v.start_show_time}</span>
+                                        </div>
+                                        <div className='section-body-one-text-center'>
+                                            <span>{v.name}</span>
+                                        </div>
+                                        <div className='section-body-one-text-place'>
+                                            {v.city_name} |{v.venue_name}
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className='section-body-one-text'>
-                                    <div className='section-body-one-text-top'>
-                                        <span>2020.06.12-06.14</span>
-                                    </div>
-                                    <div className='section-body-one-text-center'>
-                                        <span>演出延期</span>
-                                    </div>
-                                    <div className='section-body-one-text-place'>
-                                        深圳 |南山文体中心剧院大剧院
-                                    </div>
+                                <div className='section-body-two'>
+                                    {
+                                        v.support_desc.map((v)=>(
+                                            <span key={v.id}>{v}</span>
+                                    ))
+                                    }
                                 </div>
-                            </div>
-                            <div className='section-body-two'>
-                                <span>电子票</span>
-                                <span>可选座</span>
-                                <span>限时8折起</span>
-                            </div>
-                            <div className='section-body-three'>
-                                <span>￥280</span>
-                                <span>起</span>
-                            </div>
+                                <div className='section-body-three'>
+                                    <span>{v.min_price}</span>
+                                    <span>起</span>
+                                </div>
                         </div>
-                    </section>
+                            ))
+                        }
+                    </section>    
                 </div>
                 <div className="normal">没有更多了</div>
             </div>
         )
     }
     async componentDidMount() {
-        console.log(this.props)
-        // const {data} = await axios.get("/orange/Show/Search/getShowList"+this.state)
-        
-        // console.log(data);
-        // const detailList = data.data.list;
-        // store.dispatch(changeDealiList(detailList));
-        // this.setState({
-        //     detailList:store.getState().theater.detailList
-        // })
-        // console.log(this.state.detailList);
+        const {theatre_id,venue_id}=this.props.location.state;
+        // https://api.juooo.com/theatre/index/getTheatreInfo?theatre_id=2&longitude=&latitude=&version=6.1.1&referer=2
+        const {data}=await axios.get("/orange/theatre/index/getTheatreInfo?theatre_id="+theatre_id);
+        const theatre= data.data;
+        // console.log(theatre);
+        // https://api.juooo.com/Show/Search/getShowList?page=1&venue_id=1078,1079,1795&version=6.1.1&referer=2
+        const abc=await axios.get("/orange/Show/Search/getShowList?venue_id="+venue_id);
+        const data1=abc.data.data.list;
+        // console.log(data1)
+        store.dispatch(changeTheatreid({
+            theatre:theatre,
+            venue:data1
+        }));
+        this.setState({
+            theatre:theatre,
+            venue:data1
+        })
+        // console.log(this.state.theatre);
+         console.log(this.state.venue);
     }
 }

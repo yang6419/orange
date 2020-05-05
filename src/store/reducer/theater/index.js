@@ -8,5 +8,9 @@ export default function (state= theaterInit,{type,payload}) {
     if(type=== theaterType.CHANGE_DETAIL){
         state.detailList= payload;
     }
+    if(type=== theaterType.CHANGE_THEATRE_IDL){
+        state.theatre= payload.theatre;
+        state.venue=payload.venue
+    }
     return state;
 }

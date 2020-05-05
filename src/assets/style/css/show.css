@@ -1,0 +1,154 @@
+html,body{
+    height: 100%;
+}
+
+html{
+    font-size: 26.67vw;
+}
+
+body{
+    width: 100vw;
+    font-size: 16px;
+}
+
+.show{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.show_title{
+    height:0.44rem;
+    position: relative;
+    border-bottom: 1px solid #232323;
+}
+
+.show_title span{
+    display: block;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    text-align: center;
+    font-size: 0.18rem;
+    color: #232323;
+}
+
+.show_title span i{
+    position: absolute;
+    left: 0;
+}
+
+.right_nav{
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.show_type{
+    width: 100%;
+    height: 0.455rem;
+}
+.show_type .nav{
+    height: 0.255rem;
+    padding: 0.1rem 0 0.1rem 0.15rem;
+}
+
+.show_type a{
+    color: #000000;
+    font-size: 0.15rem;
+    margin-left:0.125rem ;
+}
+
+.show_type .city_wrap{
+    width: 0.76rem;
+    height: 0.2rem;
+    font-size: 0.15rem;
+    color: #666666;
+    float: right;
+    border-left: 1px solid #999999;
+}
+
+.show_type .city_wrap span{
+    margin-left: 0.1rem;
+}
+
+.show_main{
+    background-color: rgba(240,240,240,0.5);
+    padding: 0 0.125rem;
+}
+
+.show_main .show_module{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.show_main .show_module li{
+    width:48%;
+    margin-top: 0.075rem;
+    height: 3.43rem;
+    background-color: #fefefe;
+}
+
+.show_module .falls{
+    width:1.695rem;
+    height: 4.31rem;
+    position: relative;
+}
+.show_module .falls span{
+    display: block;
+    position: absolute;
+    top: 0.1rem;
+    right: 0.1rem;
+    border-radius: 0.02667rem;
+    color: #FEFEFE;
+    background: linear-gradient(-45deg, rgba(38,38,38,0.8), rgba(70,68,65,0.8));
+}
+
+.show_module li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.15rem;
+}
+
+.cell_info{
+    width: 1.695rem;
+    height: 1.1rem;
+    padding: 0.08rem 0.11rem 0.11rem;
+}
+
+.info_title{
+    width: 1.5rem;
+    color: #232323;
+    font-weight: normal;
+    font-size: 0.13rem;
+    line-height: 0.215rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.cell_info .time{
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 0.13rem;
+    color: #666;
+    line-height: 0.53333rem;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.cell_info .info_price{
+    font-size: 0.15rem;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   color: #ff6743;
+    margin-top: 0.05rem;
+}
+.info_price>span{
+    color: #999999;
+    font-size: 0.12rem;
+}

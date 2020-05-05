@@ -8,11 +8,9 @@ import {
 } from 'react-router-dom';
 import {Provider} from 'react-redux';
 import store from './store';
-<<<<<<< HEAD
-
-=======
 import 'lib-flexible';
->>>>>>> 58a6883ee3b77cd09dcec047784ae0cc62ba8d66
+import filters from "./filters"
+React.Component.prototype.$filters = filters;
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>

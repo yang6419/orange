@@ -1,15 +1,11 @@
-<<<<<<< HEAD
 import theater from "./theater";
-=======
->>>>>>> 58a6883ee3b77cd09dcec047784ae0cc62ba8d66
+import tour from "./tour";
 import {
     combineReducers
 } from 'redux';
 
 export default combineReducers({
-<<<<<<< HEAD
     theater,
-=======
+    tour
 
->>>>>>> 58a6883ee3b77cd09dcec047784ae0cc62ba8d66
 })

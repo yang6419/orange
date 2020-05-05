@@ -1,17 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-
-export default class Home extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {}
-    }
-
-    render() {
-        return (
-            <div>
-                首页
-=======
 import HomeHeader from "../../components/Home/HomeHeader";
 import HomeBanner from "../../components/Home/HomeBanner";
 import HomeLabel from "../../components/Home/HomeLabel";
@@ -40,7 +27,6 @@ export default class Home extends React.Component {
                 <div className={"home-flexd"}>
                     <img src={Image1} alt=""/>
                 </div>
->>>>>>> 58a6883ee3b77cd09dcec047784ae0cc62ba8d66
             </div>
         )
     }

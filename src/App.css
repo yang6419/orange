@@ -1,16 +1,17 @@
+
+html,body{
+  width: 100%;
+}
+
 *{
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
-=======
 li{
   list-style: none;
 }
 .App {
   text-align: center;
 }
-
->>>>>>> 58a6883ee3b77cd09dcec047784ae0cc62ba8d66
 
 
