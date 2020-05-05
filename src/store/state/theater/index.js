@@ -1,4 +1,6 @@
 export default {
     theaterList:[],
-    detailList:[]
+    detailList:[],
+    theatre:[],
+    venue:[]
 }

@@ -11,3 +11,12 @@ export function changeDealiList(payload) {
         payload
     }
 }
+export function changeTheatreid({theatre,venue}) {
+    return {
+        type:theaterType.CHANGE_THEATRE_ID,
+        payload:{
+            venue:venue,
+            theatre:theatre
+        }
+    }
+}

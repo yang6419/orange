@@ -8,8 +8,14 @@ import {
 } from 'react-router-dom';
 import {Provider} from 'react-redux';
 import store from './store';
+<<<<<<< HEAD
  // import 'lib-flexible';
 import '@material-ui/core';
+=======
+import 'lib-flexible';
+import filters from "./filters"
+React.Component.prototype.$filters = filters;
+>>>>>>> fc3a7c8c901f22e0cd1e774ea428bfdcdbcb4f68
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>

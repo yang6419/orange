@@ -1,0 +1,99 @@
+header{
+    height: 1.17333rem;
+    width: 100%;
+    background-color: white;
+    font-size: 0.48rem;
+    color: #232323;
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:left;
+}
+header span{
+    position: absolute;
+    text-align: center;
+    height: 1.17333rem;
+    line-height: 1.17333rem;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+header i:nth-child(1){
+    padding: 0.29333rem 0.53333rem 0.29333rem 0.26667rem;
+    font-size: 0.48rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+header i:nth-child(3){
+    font-size: 0.48rem;
+    padding: 0.29333rem 0.2rem 0.29333rem 0.2rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.real-content_name {
+    position: relative;
+    height: 1.6rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 0.42667rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+.real.content_name_tip{
+    width: 2.45333rem;
+    color: #232323;
+}
+.real.content_name_tip_input{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #232323;
+}
+.real-line{
+    height: 1px;
+    background-color: #EEEEEE;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+.real-content_id{
+    height: 1.6rem;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-box-align: center;
+    -ms-flex-align: center; */
+    /* align-items: center; */
+    font-size: 0.42667rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+.real.content_id_tip{
+    width: 2.45333rem;
+    color: #232323;
+    height: 1.6rem;
+    text-align: center;
+}
+.real.content_id_tip_input{
+    line-height: 1.6rem;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #232323;
+}

@@ -4,6 +4,9 @@ import store from "../../store";
 import '../../assets/Theater/Theater.css';
 import ShowList from "../../components/theater/Theater_showList";
 import {changeCategory} from "../../store/actionCreator/theater";
+import {
+    Link
+} from 'react-router-dom';
 export default class Theatre extends React.Component {
     constructor(props) {
         super(props);
@@ -15,7 +18,7 @@ export default class Theatre extends React.Component {
     render() {
         return (
             <div className="theater">
-                <header><h2>剧院</h2></header>
+                <header className='theater_header'><h3>剧院</h3></header>
                 <section className="main">
                 <ul>
                     {
@@ -23,7 +26,10 @@ export default class Theatre extends React.Component {
                         <li key={v.id}>
                             <div className="mainT">
                                 <div className="maintop">
-                                    <a href='/detail' {...v.name}>
+                                    <Link to={{
+                                        pathname:'detail',
+                                        state:{theatre_id:v.id,venue_id:v.vid}
+                                    }}>
                                         <div className='maintop-a-img'>
                                             <img src={''+v.pic} alt=""/>
                                         </div>
@@ -31,7 +37,7 @@ export default class Theatre extends React.Component {
                                             <p>{v.name}</p>
                                             <span>{v.count}</span>在线演出
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="maincenter">
                                     {
